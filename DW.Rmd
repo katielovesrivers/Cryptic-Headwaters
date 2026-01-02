@@ -1,0 +1,124 @@
+---
+title: "DW"
+author: "Katie Larkin"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("setup.R")
+```
+
+Relationships between order and geometry.
+```{r}
+dw <- read.csv("channel_depths_widths_STATSFORMAT.csv")
+dw_PA <- read.csv("Rausch_DW_STATSFORMAT.csv")
+
+#Needed to be log-transformed
+hist(dw$Width)
+hist(log(dw$Width))
+
+hist(dw$Depth)
+hist(log(dw$Depth))
+
+hist(dw$XsecArea)
+hist(log(dw$XsecArea))
+
+dw_log <- dw %>%
+  mutate(Width_log = log(Width)) %>%
+         mutate(Depth_log = log(Depth)) %>%
+        mutate(XsecArea_log = log(XsecArea))
+
+#Depth passes Levene's test
+dw_log  %>%
+levene_test(Depth_log ~ Order) 
+
+#Width does not - use non parametric test by setting var.equal=false
+dw_log  %>%
+levene_test(Width_log ~ Order) 
+
+#Xsec area doesn't either
+dw_log  %>%
+levene_test(XsecArea_log ~ Order) 
+
+#STRONG SHIT! All 3 stream orders are statistically distinct in their widths, depths, and resultant cross-sectional areas. Supports the idea of increasing stream power and greater erosional power with increasing Strahler order. 
+dw_log %>%
+t_test(Width_log ~ Order, var.equal = FALSE, detailed = TRUE)
+
+dw_log %>%
+t_test(XsecArea_log ~ Order, var.equal = FALSE, detailed = TRUE)
+
+dw_log %>%
+t_test(Depth_log ~ Order, var.equal = TRUE, detailed = TRUE)
+```
+
+Examine geometry against flow, glaciology, and elevation.
+```{r}
+#Split up by order 
+dw_minus32 <- dw_log %>%
+  filter(Order == "One")
+
+dw_minus31 <- dw_log %>%
+  filter(Order == "Two")
+
+dw_minus12 <- dw_log %>%
+  filter(Order == "Three")
+
+#FIRST ORDER CHANNELS
+dw_minus32 %>%
+t_test(XsecArea_log ~ FlowStatus, var.equal = FALSE, detailed = TRUE)
+dw_minus32 %>%
+t_test(Depth_log ~ FlowStatus, var.equal = TRUE, detailed = TRUE)
+dw_minus32 %>%
+t_test(Width_log ~ FlowStatus, var.equal = FALSE, detailed = TRUE)
+
+#SECOND ORDER CHANNELS
+dw_minus31 %>%
+t_test(XsecArea_log ~ FlowStatus, var.equal = FALSE, detailed = TRUE)
+dw_minus31 %>%
+t_test(Depth_log ~ FlowStatus, var.equal = TRUE, detailed = TRUE)
+dw_minus31 %>%
+t_test(Width_log ~ FlowStatus, var.equal = FALSE, detailed = TRUE)
+
+#THIRD ORDER CHANNELS
+dw_minus12 %>%
+t_test(XsecArea_log ~ FlowStatus, var.equal = FALSE, detailed = TRUE)
+dw_minus12 %>%
+t_test(Depth_log ~ FlowStatus, var.equal = TRUE, detailed = TRUE)
+dw_minus12 %>%
+t_test(Width_log ~ FlowStatus, var.equal = FALSE, detailed = TRUE)
+##### Regardless of elevation, dry channels are deeper and wider, and have larger cross sectional areas as a result. 
+
+#FIRST ORDER CHANNELS
+dw_minus32 %>%
+t_test(XsecArea_log ~ System, var.equal = FALSE, detailed = TRUE)
+dw_minus32 %>%
+t_test(Depth_log ~ System, var.equal = TRUE, detailed = TRUE)
+dw_minus32 %>%
+t_test(Width_log ~ System, var.equal = FALSE, detailed = TRUE)
+
+#SECOND ORDER CHANNELS
+dw_minus31 %>%
+t_test(XsecArea_log ~ System, var.equal = FALSE, detailed = TRUE)
+dw_minus31 %>%
+t_test(Depth_log ~ System, var.equal = TRUE, detailed = TRUE)
+dw_minus31 %>%
+t_test(Width_log ~ System, var.equal = FALSE, detailed = TRUE)
+
+#THIRD ORDER CHANNELS
+dw_minus12 %>%
+t_test(XsecArea_log ~ System, var.equal = FALSE, detailed = TRUE)
+dw_minus12 %>%
+t_test(Depth_log ~ System, var.equal = TRUE, detailed = TRUE)
+dw_minus12 %>%
+t_test(Width_log ~ System, var.equal = FALSE, detailed = TRUE)
+#Non-glaciated systems generally have wider and deeper flow, with larger cross-sectional areas. 
+
+dw_minus32 %>% 
+ggplot(aes(x=FlowStatus, y=Width_log)) +
+  geom_boxplot(aes(fill=FlowStatus)) +
+    labs(
+    title = "First-order channel length by flow status",
+    x = "Flow status",
+    y = "First-order channel length")

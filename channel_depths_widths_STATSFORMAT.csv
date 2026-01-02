@@ -1,0 +1,272 @@
+﻿Name,Width,Depth,Order,XsecArea,System,FlowStatus
+JGT 1,35,8,One,280,NonGlac,LEDry
+JGT 1a,40,10,One,400,NonGlac,LEDry
+JGT 2,25,8,One,200,NonGlac,LEDry
+JGT 2a,50,5,One,250,NonGlac,LEDry
+JGT 3,25,5,One,125,NonGlac,LEDry
+JGT 3a,30,5,One,150,NonGlac,LEDry
+JGT 4,30,5,One,150,NonGlac,LEDry
+JGT 5,60,4,One,240,NonGlac,LEDry
+JGT 6,60,5,Two,300,NonGlac,LEDry
+JGT 6a,100,12,Two,1200,NonGlac,LEDry
+JGT 6b,25,12,Two,300,NonGlac,LEDry
+JGT 7,45,5,One,225,NonGlac,LEDry
+JGT 7a,30,8,One,240,NonGlac,LEDry
+JGT 7b,30,5,One,150,NonGlac,LEDry
+JGT 8,60,8,One,480,NonGlac,LEDry
+JGT 8a,40,10,One,400,NonGlac,LEDry
+JGT 9,40,5,One,200,NonGlac,LEDry
+JGT 9a,70,15,One,1050,NonGlac,LEDry
+JGT 10,30,7,One,210,NonGlac,LEDry
+JGT 10a,45,20,One,900,NonGlac,LEDry
+JGT 11,45,15,Two,675,NonGlac,LEDry
+JGT 11a,35,25,Two,875,NonGlac,LEDry
+JGT 11b,25,15,Two,375,NonGlac,LEDry
+JGT 12,45,5,One,225,NonGlac,LEDry
+JGT 12a,40,15,One,600,NonGlac,LEDry
+JGT 13,60,15,Three,900,NonGlac,LEDry
+JGT 13a,35,5,Three,175,NonGlac,LEDry
+JGT 14,45,20,Two,900,NonGlac,LEDry
+JGT 14a,135,8,Two,1080,NonGlac,LEDry
+JGT 14b,35,30,Two,1050,NonGlac,LEDry
+JGT 14c,60,18,Two,1080,NonGlac,LEDry
+JGT 14d,45,8,Two,360,NonGlac,LEDry
+JGT 16,50,40,One,2000,NonGlac,LEDry
+JGT 17,25,7,One,175,NonGlac,LEDry
+JGT 17a,30,5,One,150,NonGlac,LEDry
+JGT 18,35,5,One,175,NonGlac,LEDry
+JGT 19,35,5,One,175,NonGlac,LEDry
+JGT 19a,30,2,One,60,NonGlac,LEDry
+JGT 20,35,5,One,175,NonGlac,LEDry
+JGT 20a,35,5,One,175,NonGlac,LEDry
+JGT 21,55,5,One,275,NonGlac,LEDry
+JGT 21a,20,5,One,100,NonGlac,LEDry
+JGT 22,50,5,Three,250,NonGlac,LEDry
+JGT 22a,25,5,Three,125,NonGlac,LEDry
+JGT 23,30,5,One,150,NonGlac,LEDry
+JGT 23a,50,5,One,250,NonGlac,LEDry
+JGT 23b,60,5,One,300,NonGlac,LEDry
+JGT 24,25,15,One,375,NonGlac,LEDry
+JGT 24a,55,15,One,825,NonGlac,LEDry
+JGT 24b,25,5,One,125,NonGlac,LEDry
+Bedsprings Creek,230,20,Three,4600,NonGlac,LEFlowing
+Bedsprings Creek a,220,55,Three,12100,NonGlac,LEDry
+Bedsprings Creek b,290,50,Three,14500,NonGlac,LEDry
+Bedsprings Creek c,330,10,Three,3300,NonGlac,LEDry
+Bedsprings Creek d,130,25,Three,3250,NonGlac,LEDry
+Bedsprings Creek e,140,20,Three,2800,NonGlac,LEDry
+Bedsprings Creek f,260,20,Three,5200,NonGlac,LEDry
+Bedsprings Creek g,310,45,Three,13950,NonGlac,LEDry
+Bedsprings Creek h,340,60,Three,20400,NonGlac,LEDry
+Bedsprings Creek i,390,100,Three,39000,NonGlac,LEDry
+Bedsprings Creek j,350,70,Three,24500,NonGlac,LEDry
+Bedsprings Creek k,510,60,Three,30600,NonGlac,LEDry
+Bedsprings Creek l,370,50,Three,18500,NonGlac,LEDry
+Bedsprings Creek m,350,40,Three,14000,NonGlac,LEDry
+Bedsprings Creek n,250,35,Three,8750,NonGlac,LEDry
+Bedsprings Creek o,150,100,Three,15000,NonGlac,LEDry
+Bedsprings Branch 1,60,10,Two,600,NonGlac,LEDry
+Bedsprings Branch 1a,80,10,Two,800,NonGlac,LEDry
+Bedsprings Branch 1b,80,15,Two,1200,NonGlac,LEDry
+Bedsprings Branch 1c,80,10,Two,800,NonGlac,LEDry
+Bedsprings Branch 1d,90,25,Two,2250,NonGlac,LEDry
+Bedsprings Branch 1e,50,5,Two,250,NonGlac,LEDry
+Bedsprings Branch 1f,80,35,Two,2800,NonGlac,LEDry
+BC1 Trib 1,20,5,One,100,NonGlac,LEDry
+BC1 Trib 1a,20,5,One,100,NonGlac,LEDry
+BC1 Trib 1A,30,5,One,150,NonGlac,LEDry
+BC1 Trib 2,40,5,One,200,NonGlac,LEDry
+BC1 Trib 2a,40,5,One,200,NonGlac,LEDry
+BC1 Trib 3,50,10,One,500,NonGlac,LEDry
+BC1 Trib 3a,90,10,One,900,NonGlac,LEDry
+BC1 Trib 3b,50,20,One,1000,NonGlac,LEDry
+Bedsprings Branch 2,33,12,Two,396,NonGlac,LEDry
+Bedsprings Branch 2a,55,15,Two,825,NonGlac,LEDry
+Bedsprings Branch 2b,60,30,Two,1800,NonGlac,LEDry
+Bedsprings Branch 2c,80,10,Two,800,NonGlac,LEDry
+Bedsprings Branch 2d,140,14,Two,1960,NonGlac,LEDry
+Bedsprings Branch 2e,45,30,Two,1350,NonGlac,LEDry
+Bedsprings Branch 2f,75,25,Two,1875,NonGlac,LEDry
+Bedsprings Branch 2g,100,50,Two,5000,NonGlac,LEDry
+BC2 Trib 4,35,5,One,175,NonGlac,LEDry
+BC2 Trib 4a,30,10,One,300,NonGlac,LEDry
+BC2 Trib 5,40,20,One,800,NonGlac,LEDry
+BC2 Trib 5a,20,10,One,200,NonGlac,LEDry
+BC2 Trib 5b,40,20,One,800,NonGlac,LEDry
+BC2 Trib 6,35,8,One,280,NonGlac,LEDry
+BC2 Trib 6a,65,15,One,975,NonGlac,LEDry
+BC2 Trib 7,16,3,One,48,NonGlac,LEDry
+BC2 Trib 7a,19,11,One,209,NonGlac,LEDry
+BC2 Trib 7A,30,7,One,210,NonGlac,LEDry
+BC2 Trib 8,14,2,One,28,NonGlac,LEDry
+Bedsprings Branch 3 ,100,15,Two,1500,NonGlac,LEDry
+Bedsprings Branch 3a,165,20,Two,3300,NonGlac,LEDry
+Bedsprings Branch 3b,50,45,Two,2250,NonGlac,LEDry
+BC3 Trib 9,40,5,One,200,NonGlac,LEDry
+BC3 Trib 9a,85,15,One,1275,NonGlac,LEDry
+BC3 Trib 10,20,5,One,100,NonGlac,LEDry
+BC3 Trib 10a,35,10,One,350,NonGlac,LEDry
+BC3 Trib 11,65,15,One,975,NonGlac,LEDry
+Bedsprings Branch 4 ,110,15,Two,1650,NonGlac,LEDry
+Bedsprings Branch 4a,75,20,Two,1500,NonGlac,LEDry
+Bedsprings Branch 4c,45,5,Two,225,NonGlac,LEDry
+Bedsprings Branch 4b,65,15,Two,975,NonGlac,LEDry
+BC4 Trib 12,40,10,One,400,NonGlac,LEDry
+BC4 Trib 12a,35,5,One,175,NonGlac,LEDry
+BC4 Trib 12b,70,12,One,840,NonGlac,LEDry
+BC4 Trib 13,20,5,One,100,NonGlac,LEDry
+BC4 Trib 14,55,10,One,550,NonGlac,LEDry
+BC4 Trib 14a,50,8,One,400,NonGlac,LEDry
+BC4 Trib 15,20,7,One,140,NonGlac,LEDry
+BC4 Trib 15a,60,10,One,600,NonGlac,LEDry
+Neota 1,28,4,Two,112,Glac,HEFlowing
+Neota 1a,40,5,Two,200,Glac,HEFlowing
+Neota 1b,41,5,Two,205,Glac,HEFlowing
+Neota 1c,30,3,Two,90,Glac,HEFlowing
+Neota 1d,38,2,Two,76,Glac,HEFlowing
+Neota 1e,70,3,Two,210,Glac,HEFlowing
+Neota 1f,40,3,Two,120,Glac,HEFlowing
+Neota 1g,50,3,Two,150,Glac,HEFlowing
+Neota 1h,40,3,Two,120,Glac,HEFlowing
+Neota 1i,30,6,Two,180,Glac,HEFlowing
+Neota 1j,80,20,Two,1600,Glac,HEFlowing
+Neota Trib 1k,30,30,Two,900,Glac,HEFlowing
+N1 Trib 1,18,3,One,54,Glac,HEFlowing
+N1 Trib 1a,18,3,One,54,Glac,HEFlowing
+N1 Trib 2,18,2,One,36,Glac,HEFlowing
+N1 Trib 2a,32,2,One,64,Glac,HEFlowing
+N1 Trib 3,23,1,One,23,Glac,HEFlowing
+N1 Trib 3a,20,3,One,60,Glac,HEFlowing
+N1 Trib 3b,30,3,One,90,Glac,HEFlowing
+N1 Trib 4,9,1,One,9,Glac,HEFlowing
+N1 Trib 4a,11,1,One,11,Glac,HEFlowing
+N1 Trib 5,20,1,One,20,Glac,HEFlowing
+N1 Trib 5a,22,1,One,22,Glac,HEFlowing
+N1 Trib 5b,20,2,One,40,Glac,HEFlowing
+N1 Trib 6,12,2,One,24,Glac,HEFlowing
+N1 Trib 6a,30,1,One,30,Glac,HEFlowing
+N1 Trib 7,20,2,One,40,Glac,HEFlowing
+N1 Trib 7a,13,1,One,13,Glac,HEFlowing
+N1 Trib 7b,12,1,One,12,Glac,HEFlowing
+N1 Trib 8,16,4,One,64,Glac,HEFlowing
+N1 Trib 8a,24,2,One,48,Glac,HEFlowing
+N1 Trib 8b,24,2,One,48,Glac,HEFlowing
+N1 Trib 8c,32,4,One,128,Glac,HEFlowing
+N1 Trib 9,55,2,One,110,Glac,HEFlowing
+N1 Trib 9a,71,4,One,284,Glac,HEFlowing
+N1 Trib 9b,33,1,One,33,Glac,HEFlowing
+N1 Trib 10,10,3,One,30,Glac,HEFlowing
+N1 Trib 11,30,3,One,90,Glac,HEFlowing
+Neota 2,23,3.5,One,80.5,Glac,HEFlowing
+Neota 2a,225,9,One,2025,Glac,HEFlowing
+Neota 2b,100,10,One,1000,Glac,HEFlowing
+Neota 2c,110,15,One,1650,Glac,HEFlowing
+Neota 2d,90,13,One,1170,Glac,HEFlowing
+Neota 2e,25,7,One,175,Glac,HEFlowing
+Neota 2f,18,14,One,252,Glac,HEFlowing
+Neota 3,35,30,Three,1050,Glac,HEFlowing
+Neota 3a,70,20,Three,1400,Glac,HEFlowing
+Neota 3b,60,25,Three,1500,Glac,HEFlowing
+Neota 3c,50,19,Three,950,Glac,HEFlowing
+Neota 3d,165,22,Three,3630,Glac,HEFlowing
+Neota 3e,50,35,Three,1750,Glac,HEFlowing
+Neota 3f,57,16,Three,912,Glac,HEFlowing
+Branch 1,60,10,Two,600,Glac,HEFlowing
+Branch 1a,25,20,Two,500,Glac,HEFlowing
+N3 Trib 1,15,8,One,120,Glac,HEFlowing
+N3 Trib 2,15,8,One,120,Glac,HEFlowing
+N3 Trib 3,20,6,One,120,Glac,HEFlowing
+N3 Trib 4,10,5,One,50,Glac,HEFlowing
+N3 Trib 5,40,6,One,240,Glac,HEFlowing
+N3 Trib 5a,45,6,One,270,Glac,HEFlowing
+N3 Trib 6,25,9,One,225,Glac,HEFlowing
+N3 Trib 6a,35,10,One,350,Glac,HEFlowing
+N3 Trib 7,15,5,One,75,Glac,HEFlowing
+N3 Trib 7a,22,6,One,132,Glac,HEFlowing
+N3 Trib 8,25,5,One,125,Glac,HEFlowing
+N3 Trib 8a,30,10,One,300,Glac,HEFlowing
+N3 Trib 9,40,8,One,320,Glac,HEFlowing
+N3 Trib 9a,19,14,One,266,Glac,HEFlowing
+SPLIT 1,29,9,Two,261,Glac,HEFlowing
+SPLIT 1a,35,10,Two,350,Glac,HEFlowing
+N3S1 Trib 1,30,10,One,300,Glac,HEFlowing
+N3S1 Trib 1a,30,4,One,120,Glac,HEFlowing
+N3S1 Trib 2,25,7,One,175,Glac,HEFlowing
+N3S1 Trib 2a,40,5,One,200,Glac,HEFlowing
+N3S1 Trib 3,20,7,One,140,Glac,HEFlowing
+N3S1 Trib 4,50,10,One,500,Glac,HEFlowing
+N3S1 Trib 4a,35,8,One,280,Glac,HEFlowing
+N3S1 Trib 5,20,9,One,180,Glac,HEFlowing
+N3S1 Trib 5a,18,19,One,342,Glac,HEFlowing
+SPLIT 2 ,20,14,Two,280,Glac,HEFlowing
+SPLIT 2a,14,13,Two,182,Glac,HEFlowing
+SPLIT 2b,25,8,Two,200,Glac,HEFlowing
+N3S2 Trib 1,30,7,One,210,Glac,HEFlowing
+N3S2 Trib 1a,25,6,One,150,Glac,HEFlowing
+N3S2 Trib 2,20,6,One,120,Glac,HEFlowing
+N3S2 Trib 2a,35,8,One,280,Glac,HEFlowing
+N3S2 Trib 3,31,4,One,124,Glac,HEFlowing
+N3S2 Trib 4,35,5,One,175,Glac,HEFlowing
+N3S2 Trib 4a,20,11,One,220,Glac,HEFlowing
+N3S2 Trib 5,25,5,One,125,Glac,HEFlowing
+N3S2 Trib 5a,17,10,One,170,Glac,HEFlowing
+Neota 4,25,5,One,125,Glac,HEFlowing
+Neota 4a,25,3,One,75,Glac,HEFlowing
+Neota 4b,28,3,One,84,Glac,HEFlowing
+Neota 4c,20,5,One,100,Glac,HEFlowing
+Neota 4d,20,10,One,200,Glac,HEFlowing
+LBC 1,35,7,One,245,NonGlac,LEDry
+LBC 1a,55,15,One,825,NonGlac,LEDry
+LBC 1b,55,12,One,660,NonGlac,LEDry
+LBC 1c,110,15,One,1650,NonGlac,LEDry
+LBC 1d,40,5,One,200,NonGlac,LEDry
+LBC 2,10,2,One,20,NonGlac,LEFlowing
+LBC 2a,12,3,One,36,NonGlac,LEFlowing
+LBC 2b,10,3,One,30,NonGlac,LEFlowing
+LBC 3,20,3,One,60,NonGlac,LEFlowing
+LBC 3a,40,10,One,400,NonGlac,LEFlowing
+LBC 3b,20,4,One,80,NonGlac,LEFlowing
+LBC 3c,40,4,One,160,NonGlac,LEFlowing
+LBC 4,80,10,One,800,NonGlac,LEFlowing
+LBC 4a,110,35,One,3850,NonGlac,LEFlowing
+LBC 4b,40,1,One,40,NonGlac,LEFlowing
+LBC 4c,42,2,One,84,NonGlac,LEFlowing
+LBC 4d,65,6,One,390,NonGlac,LEFlowing
+LBC 5,22,3,One,66,NonGlac,LEFlowing
+LBC 6,60,10,One,600,NonGlac,LEDry
+LBC 6a,55,15,One,825,NonGlac,LEDry
+LBC 7,30,1,One,30,NonGlac,LEFlowing
+LBC 7a,45,3,One,135,NonGlac,LEFlowing
+LBC 7b ,21,4,One,84,NonGlac,LEFlowing
+LBC 8,52,1,One,52,NonGlac,LEFlowing
+LBC 8a,44,1,One,44,NonGlac,LEFlowing
+LBC 9,22,3,One,66,NonGlac,LEFlowing
+LBC 9a,27,1,One,27,NonGlac,LEFlowing
+LBC 10,35,5,One,175,NonGlac,LEFlowing
+LBC 10a,40,8,One,320,NonGlac,LEFlowing
+LBC 11,30,10,One,300,NonGlac,LEFlowing
+LBC 11a,30,10,One,300,NonGlac,LEFlowing
+LBC 12,24,4,One,96,NonGlac,LEFlowing
+LBC 13,12,1,One,12,NonGlac,LEFlowing
+LBC 14,45,4,One,180,NonGlac,LEFlowing
+LBC 14a,7,1,One,7,NonGlac,LEFlowing
+LBC 15,10,1,One,10,NonGlac,LEFlowing
+LBC 15a,20,5,One,100,NonGlac,LEFlowing
+LBC 16,30,20,One,600,NonGlac,LEFlowing
+LBC 16a,45,10,One,450,NonGlac,LEFlowing
+LBC 17,35,10,One,350,NonGlac,LEFlowing
+LBC 17a,30,30,One,900,NonGlac,LEFlowing
+LBC 18,15,2,One,30,NonGlac,LEFlowing
+LBC 19,20,5,One,100,NonGlac,LEFlowing
+LBC 19a,28,20,One,560,NonGlac,LEFlowing
+LBC 20,30,15,One,450,NonGlac,LEFlowing
+LBC 20a,45,5,One,225,NonGlac,LEFlowing
+LBC Trib 1,51,5,Two,255,NonGlac,LEFlowing
+LBC Trib 1a,40,10,Two,400,NonGlac,LEFlowing
+LBC Trib 1b,35,5,Two,175,NonGlac,LEFlowing
+LBC Trib 2,42,12,Three,504,NonGlac,LEFlowing
+LBC Trib 2a,120,25,Three,3000,NonGlac,LEFlowing
+LBC Trib 2b,35,15,Three,525,NonGlac,LEFlowing
+LBC Trib 2c,70,25,Three,1750,NonGlac,LEFlowing
+LBC Trib 2d,45,15,Three,675,NonGlac,LEFlowing
+LBC Trib 2e,75,20,Three,1500,NonGlac,LEFlowing

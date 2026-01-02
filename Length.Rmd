@@ -1,0 +1,122 @@
+---
+title: "Length"
+author: "Katie Larkin"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("setup.R")
+```
+
+```{r}
+olfs <- read.csv("order_length_system_status_STATSFORMATt.csv")
+
+ol_minus32 <- olfs %>%
+  filter(Stream.order == "One") %>%
+  mutate(Length_log = log(Min.Length))
+  
+ol_minus31 <- olfs %>%
+  filter(Stream.order == "Two")  %>%
+  mutate(Length_log = log(Min.Length))
+
+#No relationship between second order channels and system/position
+ol_minus31 %>%
+t_test(Length_log ~ System, var.equal = TRUE, detailed = TRUE)
+
+#1st order channels are longer for LBC/JG than Neota; does this have to do with glaciation, climate, veg., fire (increase surface runoff), overestimation of straight-line segments, etc. Lower threshold for channelization in these lower elevations/fire-impacted zones?
+ol_minus32 %>%
+t_test(Length_log ~ System, var.equal = TRUE, detailed = TRUE)
+```
+```{r}
+# Normal distribution?
+olfs  %>% 
+  group_by(Flow.Status) %>%
+ shapiro_test(Length)
+
+#Equal variance?
+olfs %>% 
+levene_test(Length ~ FlowStatus)
+
+#Our distributions are not normal and our variances are not equal. We must use non-parametric tests to assess this hypothesis. Let's use a Kruskal test to see if there is a significant difference in snout length by channel unit type.
+olfs  %>% 
+  kruskal_test(Length ~ FlowStatus)
+#From the Kruskal test, we can conclude that at least one of our flow statuses is significantly different in channel length.
+
+# Let's plot our channel lengths as grouped by flow status  and assess for visual differences:
+olf %>% 
+ggplot(aes(x=FlowStatus, y=Length)) +
+  geom_boxplot(aes(fill=FlowStatus)) +
+    labs(
+    title = "First-order channel length by flow status",
+    x = "Flow status",
+    y = "First-order channel length")
+
+#We can also plot histograms to view distributions for each flow status:
+olf %>% 
+  ggplot(aes(x = Length)) +
+  geom_histogram() +
+  facet_wrap(~FlowStatus, ncol = 1)
+  
+#We know at least one significantly different group is present. Let's us a Dunn's test to see exactly which between-group relationships are different.
+olf  %>% 
+  dunn_test(Length ~ FlowStatus)
+
+#High elevation flowing channels (Neota) and low elevation dry first-order channels (primarily JG) are significantly different in their length. 
+```
+
+```{r}
+#Don't need to examine third-order channels right now
+olfs_minus3 <- olfs %>%
+  filter(Stream.order %in%  c("One", "Two")) %>%
+    mutate(Length_log = log(Min.Length)) 
+
+#Needed to be log-transformed
+hist(olfs_minus3$Min.Length)
+hist(log(olfs_minus3$Min.Length))
+
+head(olfs_minus3)
+
+#Passes Levene's test
+olfs_minus3 %>%
+levene_test(Length_log ~ Stream.order) 
+
+#First-order channels are significantly shorter than second-order.
+olfs_minus3 %>%
+t_test(Length_log ~ Stream.order, var.equal = TRUE, detailed = TRUE)
+
+#Examining JUST FIRST ORDER CHANNELS 
+olfs_minus32 <- olfs_minus3 %>%
+  filter(Stream.order == "One") %>%
+  mutate(Length_log = log(Min.Length))
+
+#Passes Levene's test for both status and system
+olfs_minus32 %>%
+levene_test(Length_log ~ Flow.Status)
+olfs_minus32 %>%
+levene_test(Length_log ~ System)
+
+#T-tests for relationships between length and status/system!
+olfs_minus32 %>%
+t_test(Length_log ~ Flow.Status, var.equal = TRUE, detailed = TRUE)
+
+olfs_minus32 %>%
+t_test(Length_log ~ System, var.equal = TRUE, detailed = TRUE)
+#Glacial systems in general have shorter first-order channels. Getting deeper into it, low-elevation flowing and low-elevation dry channels have significantly different lengths, as do low-elevation dry and high-elevation flowing.
+
+# Let's plot our channel lengths as grouped by flow status  and assess for visual differences:
+olfs_minus32 %>% 
+ggplot(aes(x=Flow.Status, y=Min.Length)) +
+  geom_boxplot(aes(fill=Flow.Status)) +
+    labs(
+    title = "First-order channel length by flow status",
+    x = "Flow status",
+    y = "First-order channel length")
+
+#We can also plot histograms to view distributions for each flow status:
+olfs_minus32 %>% 
+  ggplot(aes(x = Min.Length)) +
+  geom_histogram() +
+  facet_wrap(~Flow.Status, ncol = 1)
+```
